@@ -3,13 +3,14 @@ import Link from "next/link";
 import LogoImg from "@/assets/logo.png";
 
 import styles from "./main-header.module.css";
+import Image from "next/image";
 
 export default function MainHeader() {
   return (
     <header className={styles.header}>
       <Link className={styles.logo} href="/">
-        <img src={LogoImg.src} alt="A plate with food on it" />
-        LevelUp Foods
+        <Image src={LogoImg} alt="A plate with food on it" priority />
+        LevelUp Food
       </Link>
       <nav className={styles.nav}>
         <ul>
