@@ -3,10 +3,14 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import { getMeals } from "@/lib/meals";
 import MealsList from "@/components/meals/meals-list";
+import { Suspense } from "react";
+
+async function MealsAsync() {
+  const meals = await getMeals();
+  return <MealsList meals={meals} />;
+}
 
 export default async function MealsPage() {
-  const meals = await getMeals();
-
   return (
     <>
       <header className={styles.header}>
@@ -22,7 +26,9 @@ export default async function MealsPage() {
         </p>
       </header>
       <main className={styles.main}>
-        <MealsList meals={meals} />
+        <Suspense fallback={<p className={styles.loading}>Loading meals...</p>}>
+          <MealsAsync />
+        </Suspense>
       </main>
     </>
   );
