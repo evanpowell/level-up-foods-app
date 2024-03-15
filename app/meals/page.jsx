@@ -1,8 +1,12 @@
 import Link from "next/link";
 
 import styles from "./page.module.css";
+import { getMeals } from "@/lib/meals";
+import MealsList from "@/components/meals/meals-list";
 
-export default function MealsPage() {
+export default async function MealsPage() {
+  const meals = await getMeals();
+
   return (
     <>
       <header className={styles.header}>
@@ -17,7 +21,9 @@ export default function MealsPage() {
           <Link href="/meals/share">Share your favorite recipe</Link>
         </p>
       </header>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <MealsList meals={meals} />
+      </main>
     </>
   );
 }
