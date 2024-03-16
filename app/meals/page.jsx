@@ -10,6 +10,11 @@ async function MealsAsync() {
   return <MealsList meals={meals} />;
 }
 
+export const metadata = {
+  title: "LevelUp Foods - Meals",
+  description: "Browse all the meals crafted by a food-loving community.",
+};
+
 export default async function MealsPage() {
   return (
     <>

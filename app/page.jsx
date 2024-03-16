@@ -14,7 +14,7 @@ export default function Home() {
         </div>
         <div>
           <div className={styles.hero}>
-            <h1>LevelUp Food for Next Level Foodies</h1>
+            <h1>LevelUp Foods for Next Level Foodies</h1>
             <p>Taste & share food from all over the world.</p>
           </div>
           <div className={styles.cta}>
@@ -27,25 +27,25 @@ export default function Home() {
         <section className={styles.section}>
           <h2>How it works</h2>
           <p>
-            LevelUp Food is a platform for foodies to share their favorite
+            LevelUp Foods is a platform for foodies to share their favorite
             recipes with the world. It&apos;s a place to discover new dishes,
             and to connect with other food lovers.
           </p>
           <p>
-            LevelUp Food is a place to discover new dishes, and to connect with
+            LevelUp Foods is a place to discover new dishes, and to connect with
             other food lovers.
           </p>
         </section>
 
         <section className={styles.section}>
-          <h2>Why LevelUp Food?</h2>
+          <h2>Why LevelUp Foods?</h2>
           <p>
-            LevelUp Food is a platform for foodies to share their favorite
+            LevelUp Foods is a platform for foodies to share their favorite
             recipes with the world. It&apos;s a place to discover new dishes,
             and to connect with other food lovers.
           </p>
           <p>
-            LevelUp Food is a place to discover new dishes, and to connect with
+            LevelUp Foods is a place to discover new dishes, and to connect with
             other food lovers.
           </p>
         </section>

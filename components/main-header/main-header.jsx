@@ -15,7 +15,7 @@ export default function MainHeader() {
       <header className={styles.header}>
         <Link className={styles.logo} href="/">
           <Image src={LogoImg} alt="A plate with food on it" priority />
-          LevelUp Food
+          LevelUp Foods
         </Link>
         <nav className={styles.nav}>
           <ul>
