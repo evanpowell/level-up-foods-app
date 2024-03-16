@@ -45,6 +45,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-right: 2px;
 }
 
 .creator a:hover,
